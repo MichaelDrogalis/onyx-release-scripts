@@ -25,7 +25,7 @@ current_version=`lein pprint :version | sed s/\"//g`
 # Update to release version.
 git checkout master
 git stash
-git pull
+git pull origin master
 
 if [[ "$new_version" == *[.]*[.]*[.]* ]]; 
 then 
