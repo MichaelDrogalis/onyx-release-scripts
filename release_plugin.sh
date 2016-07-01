@@ -12,6 +12,8 @@ if [[ "$#" -ne 2 ]]; then
     exit 1
 fi
 
+echo Releasing from directory $PWD
+
 new_version=$1
 
 version_type=$(echo "$1"|sed s/".*-"//g)
