@@ -5,8 +5,6 @@ set -o pipefail
 set -o nounset
 set -o xtrace
 
-cd "$(dirname "$0")/../.."
-
 if [[ "$#" -ne 2 ]]; then
 	echo "Usage: $0 new-version release-branch"
 	echo "Example: $0 0.8.0.4 0.8.x"
