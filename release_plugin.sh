@@ -13,6 +13,7 @@ if [[ "$#" -ne 2 ]]; then
 fi
 
 echo Releasing from directory $PWD
+exit 1
 
 new_version=$1
 
