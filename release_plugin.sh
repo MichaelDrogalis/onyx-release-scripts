@@ -61,7 +61,7 @@ git clean -fd
 git checkout -b $release_branch || git checkout $release_branch
 git pull origin $release_branch || true
 git merge -m "Merge branch 'master' into $release_branch" master -X theirs
-git push -u origin $release_branch
+git push -f -u origin $release_branch
 
 # Prepare next release cycle.
 git checkout master
